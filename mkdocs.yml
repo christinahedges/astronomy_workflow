@@ -1,0 +1,21 @@
+site_name: Astronomy Workflow
+nav:
+    - Home: index.md
+
+theme:
+  name: "material"
+repo_url: https://github.com/christinahedges/astronomy_workflow
+plugins:
+  - search
+  - mkdocs-jupyter
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          selection:
+            docstring_style: "numpy"
+          rendering:
+            show_source: false
+      custom_templates: templates
+      watch:
+        - src/my_package
