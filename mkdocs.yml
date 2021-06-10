@@ -1,6 +1,10 @@
 site_name: Astronomy Workflow
 nav:
     - Home: index.md
+    - basics: notebooks/1.0-basics/basics-intro.ipynb
+        - git-basics: notebooks/1.0-basics/git-basics.ipynb
+        - working-online: notebooks/1.0-basics/working-online.ipynb
+        - demo: notebooks/1.0-basics/demo.ipynb
     - building: notebooks/3.0-building/useful-tools-to-help-you.ipynb
     - 'Tools':
         - pyenv: notebooks/3.0-building/pyenv.ipynb
@@ -8,7 +12,9 @@ nav:
         - mkdocs: notebooks/3.0-building/mkdocs.ipynb
         - github-actions: notebooks/3.0-building/github_actions.ipynb
         - black-flake8: notebooks/3.0-building/black_flake8.ipynb
+        - jupyter-lab: notebooks/3.0-building/jupyter-lab.ipynb
         - colab: notebooks/3.0-building/google-colab.ipynb
+    - together: notebooks/3.0-building/putting-it-all-together.ipynb
 
 theme:
   name: "material"
