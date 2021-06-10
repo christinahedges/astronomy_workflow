@@ -1,4 +1,4 @@
-# JWST ERS GitHub Hack Tools
+# Astronomy Workflow
 
 In these notebooks we're going to look at how to use git and GitHub, and try to answer these questions?
 
@@ -9,7 +9,6 @@ In these notebooks we're going to look at how to use git and GitHub, and try to 
 * How do you make your code usable and enticing to other people?
 
 These notebooks are all going to be in Python, but we'll try to be general where we can!
-
 
 
 ## Using the Makefile to start a project with all the recommended tools
