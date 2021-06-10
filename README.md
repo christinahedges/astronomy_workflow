@@ -22,7 +22,7 @@ I'm including a Makefile which
 3. Adds basic packages (`jupyter-lab` and `numpy`)
 4. Installs `mkdocs`, and adds a `.yaml` file for it
 5. Initializes a git repository, with a .gitignore
-6. Adds a license, a test, and GitHub action files for `flake8`, `black` and `pytest`.
+6. Adds a license, a test, and GitHub action files for `flake8`, `black` and `pytest` which are all found in the `init` directory.
 
 I find this is a great way to setup a new project with roughly the things I'm going to want to start with every time. You can start a project using this file with
 
