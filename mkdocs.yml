@@ -7,8 +7,8 @@ nav:
         - issues: notebooks/1.0-basics/issues.ipynb
         - demo: notebooks/1.0-basics/demo.ipynb
     - 'Testing':
-        - pytest: notebooks/3.0-building/pytest.ipynb
-        - github-actions: notebooks/3.0-building/github_actions.ipynb
+        - pytest: notebooks/2.0-testing/pytest.ipynb
+        - github-actions: notebooks/2.0-testing/github_actions.ipynb
     - 'Useful Tools':
         - building: notebooks/3.0-building/useful-tools-to-help-you.ipynb
         - pyenv: notebooks/3.0-building/pyenv.ipynb
