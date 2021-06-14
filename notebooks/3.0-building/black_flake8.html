@@ -288,6 +288,60 @@
 
   
   
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Testing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Testing" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Testing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.0-testing/pytest.html" class="md-nav__link">
+        Making tests with pytest
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.0-testing/github_actions.html" class="md-nav__link">
+        GitHub Actions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -295,16 +349,16 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
-      <label class="md-nav__link" for="__nav_3">
-        Tools
+      <label class="md-nav__link" for="__nav_4">
+        Useful Tools
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+      <nav class="md-nav" aria-label="Useful Tools" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Useful Tools
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -351,18 +405,6 @@
     <li class="md-nav__item">
       <a href="mkdocs.html" class="md-nav__link">
         mkdocs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="github_actions.html" class="md-nav__link">
-        GitHub Actions
       </a>
     </li>
   
@@ -446,48 +488,6 @@
     <li class="md-nav__item">
       <a href="google-colab.html" class="md-nav__link">
         Google colab
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      <label class="md-nav__link" for="__nav_4">
-        Putting it all together
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Putting it all together" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Putting it all together
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="putting-it-all-together.html" class="md-nav__link">
-        A quick Makefile to make your projects
       </a>
     </li>
   
@@ -1058,6 +1058,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="black-and-flake8">black and flake8<a class="anchor-link" href="#black-and-flake8">&#182;</a></h1><p><em>TL;DR: <code>black</code> and <code>flake8</code> will make your code pretty and readable, automatically.</em></p>
+<p>There are lots of ways to format your code. Whatever you choose, you should format it nicely. Readability is super important for your users. Having beautiful, readable code will make more people want to use it. You might want to just add a linter to your editor (e.g. pylint)</p>
 <h3 id="flake8"><code>flake8</code><a class="anchor-link" href="#flake8">&#182;</a></h3><p><a href="https://flake8.pycqa.org/en/latest/">This</a> tool will enforce a style guide for you. <code>flake8</code> will throw an error if you run it on a script that doesn't obey your chosen style. You can set up a <code>.flake8</code> file which specifies the style you want to keep to. This will let you choose, for example, the max line length you would like. <code>flake8</code> will check through your code and look for errors, like importing a package that you don't use.</p>
 <p>You can set up a GitHub action so that flake8 will automatically check the style of any pull requests.</p>
 <h3 id="black"><code>black</code><a class="anchor-link" href="#black">&#182;</a></h3><p><a href="https://black.readthedocs.io/en/stable/?badge=stable">This</a> tool will automatically format your Python code, in a very sane way. It will automatically check for the right spaces between variables, push long lines into multiple lines, and will raise an error if you have a missing bracket somewhere. I highly recommend it.</p>
@@ -1087,7 +1088,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="github_actions.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: GitHub Actions" rel="prev">
+        <a href="mkdocs.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: mkdocs" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1096,7 +1097,7 @@ all of MD as it is not optimized for dense, information rich UIs.
               <span class="md-footer__direction">
                 Previous
               </span>
-              GitHub Actions
+              mkdocs
             </div>
           </div>
         </a>

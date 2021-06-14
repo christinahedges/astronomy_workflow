@@ -14,7 +14,7 @@
     
     
       
-        <title>jupyter-lab - Astronomy Workflow</title>
+        <title>Making tests with pytest - Astronomy Workflow</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jupyter-lab" class="md-skip">
+        <a href="#making-tests-with-pytest" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              jupyter-lab
+              Making tests with pytest
             
           </span>
         </div>
@@ -288,12 +288,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Testing
@@ -309,11 +311,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../2.0-testing/pytest.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="pytest.html" class="md-nav__link md-nav__link--active">
         Making tests with pytest
       </a>
+      
     </li>
   
 
@@ -323,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.0-testing/github_actions.html" class="md-nav__link">
+      <a href="github_actions.html" class="md-nav__link">
         GitHub Actions
       </a>
     </li>
@@ -342,14 +354,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       <label class="md-nav__link" for="__nav_4">
         Useful Tools
@@ -367,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="useful-tools-to-help-you.html" class="md-nav__link">
+      <a href="../3.0-building/useful-tools-to-help-you.html" class="md-nav__link">
         Recommended Python development tools
       </a>
     </li>
@@ -379,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pyenv.html" class="md-nav__link">
+      <a href="../3.0-building/pyenv.html" class="md-nav__link">
         pyenv
       </a>
     </li>
@@ -391,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="poetry.html" class="md-nav__link">
+      <a href="../3.0-building/poetry.html" class="md-nav__link">
         poetry
       </a>
     </li>
@@ -403,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mkdocs.html" class="md-nav__link">
+      <a href="../3.0-building/mkdocs.html" class="md-nav__link">
         mkdocs
       </a>
     </li>
@@ -415,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="black_flake8.html" class="md-nav__link">
+      <a href="../3.0-building/black_flake8.html" class="md-nav__link">
         black and flake8
       </a>
     </li>
@@ -425,21 +435,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="jupyter-lab.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../3.0-building/jupyter-lab.html" class="md-nav__link">
         jupyter-lab
       </a>
-      
     </li>
   
 
@@ -449,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="google-colab.html" class="md-nav__link">
+      <a href="../3.0-building/google-colab.html" class="md-nav__link">
         Google colab
       </a>
     </li>
@@ -491,7 +491,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/christinahedges/astronomy_workflow/edit/master/docs/notebooks/3.0-building/jupyter-lab.ipynb" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/christinahedges/astronomy_workflow/edit/master/docs/notebooks/2.0-testing/pytest.ipynb" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -998,31 +998,25 @@ all of MD as it is not optimized for dense, information rich UIs.
     <!-- End of mathjax configuration --><div class="jupyter-wrapper">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="jupyter-lab">jupyter-lab<a class="anchor-link" href="#jupyter-lab">&#182;</a></h1><p><em>TL;DR: jupyter notebooks are common tools in astronomy, they're great for sharing work alongside notes. jupyter-lab let's you make notebooks and scripts at the same time.</em></p>
-<p>Everyone develops in a slightly different way. I like using <code>jupyter-lab</code> to build notebooks and test ideas, and then when I'm ready to package stuff up I use an editor like <a href="https://atom.io">atom</a> to build the final scripts.</p>
-<p><code>jupyter-lab</code> let's you have a library of <code>jupyter notebooks</code> and Python scripts, and can be slightly easier to use than a single notebook. You can easily navigate through your working directory, and have tabs of different notebooks open, as well as tabs for images and other files. There's an image below of what a jupyter-lab instance looks like!</p>
+<h1 id="making-tests-with-pytest">Making tests with pytest<a class="anchor-link" href="#Making-tests-with-pytest">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span>
+</pre></div>
+
+        </div>
+    </div>
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="figures/jupyterlab.png" alt="jupyter-lab all the way down"></p>
 
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>To install jupyter-lab you can use pip, or poetry</p>
-
-<pre><code>pip install jupyterlab</code></pre>
-<p>or</p>
-
-<pre><code>poetry add jupyterlab</code></pre>
-<p>And then to start a serve you can use</p>
-
-<pre><code>jupyter-lab</code></pre>
-
-</div>
 </div>
 </div>
 
@@ -1046,7 +1040,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="black_flake8.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: black and flake8" rel="prev">
+        <a href="../1.0-basics/demo.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Demonstration" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1055,20 +1049,20 @@ all of MD as it is not optimized for dense, information rich UIs.
               <span class="md-footer__direction">
                 Previous
               </span>
-              black and flake8
+              Demonstration
             </div>
           </div>
         </a>
       
       
         
-        <a href="google-colab.html" class="md-footer__link md-footer__link--next" aria-label="Next: Google colab" rel="next">
+        <a href="github_actions.html" class="md-footer__link md-footer__link--next" aria-label="Next: GitHub Actions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Google colab
+              GitHub Actions
             </div>
           </div>
           <div class="md-footer__button md-icon">

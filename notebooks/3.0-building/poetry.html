@@ -288,6 +288,60 @@
 
   
   
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Testing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Testing" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Testing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.0-testing/pytest.html" class="md-nav__link">
+        Making tests with pytest
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.0-testing/github_actions.html" class="md-nav__link">
+        GitHub Actions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -295,16 +349,16 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
-      <label class="md-nav__link" for="__nav_3">
-        Tools
+      <label class="md-nav__link" for="__nav_4">
+        Useful Tools
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+      <nav class="md-nav" aria-label="Useful Tools" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Useful Tools
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -429,18 +483,6 @@
   
   
     <li class="md-nav__item">
-      <a href="github_actions.html" class="md-nav__link">
-        GitHub Actions
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="black_flake8.html" class="md-nav__link">
         black and flake8
       </a>
@@ -467,48 +509,6 @@
     <li class="md-nav__item">
       <a href="google-colab.html" class="md-nav__link">
         Google colab
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      <label class="md-nav__link" for="__nav_4">
-        Putting it all together
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Putting it all together" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Putting it all together
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="putting-it-all-together.html" class="md-nav__link">
-        A quick Makefile to make your projects
       </a>
     </li>
   
@@ -1102,7 +1102,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 <h1 id="poetry">poetry<a class="anchor-link" href="#poetry">&#182;</a></h1><p><em>TL;DR: <code>poetry</code> makes versioning your tools and distributing them super easy.</em></p>
 <p>When we're building tools, we often depend on dozens of libraries. Those libraries can change! If you return to your tool in 2 years, you may find that installing newer versions of the dependencies breaks your original work.</p>
 <p>So how do we ensure our work is future proof?</p>
-<p>We have to ensure that our tools come with a <em>list of requirements</em>.</p>
+<p>We have to ensure that our tools come with a <em>list of requirements</em>. This is usually kept in a pyproject.toml file, or sometimes a requirements.txt. Package managers like <code>pip</code> can usually parse these files and get you the right versions.</p>
 <p>But, keeping up with those requirements is a pain.</p>
 <p>Luckily <code>poetry</code> solves this for us. You can read more about <code>poetry</code> here, but I'll sum it up for you: <a href="https://python-poetry.org/">https://python-poetry.org/</a></p>
 <p>Using <code>poetry</code> is similar to using a virtual environment. All the packages are stored in a directory within your project, so you won't be able to use those versions outside.</p>

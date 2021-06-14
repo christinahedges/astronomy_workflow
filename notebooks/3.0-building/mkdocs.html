@@ -288,6 +288,60 @@
 
   
   
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Testing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Testing" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Testing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.0-testing/pytest.html" class="md-nav__link">
+        Making tests with pytest
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.0-testing/github_actions.html" class="md-nav__link">
+        GitHub Actions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -295,16 +349,16 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
-      <label class="md-nav__link" for="__nav_3">
-        Tools
+      <label class="md-nav__link" for="__nav_4">
+        Useful Tools
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+      <nav class="md-nav" aria-label="Useful Tools" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Tools
+          Useful Tools
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -436,18 +490,6 @@
   
   
     <li class="md-nav__item">
-      <a href="github_actions.html" class="md-nav__link">
-        GitHub Actions
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="black_flake8.html" class="md-nav__link">
         black and flake8
       </a>
@@ -474,48 +516,6 @@
     <li class="md-nav__item">
       <a href="google-colab.html" class="md-nav__link">
         Google colab
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      <label class="md-nav__link" for="__nav_4">
-        Putting it all together
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Putting it all together" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Putting it all together
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="putting-it-all-together.html" class="md-nav__link">
-        A quick Makefile to make your projects
       </a>
     </li>
   
@@ -1115,6 +1115,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="mkdocs">mkdocs<a class="anchor-link" href="#mkdocs">&#182;</a></h1><p><em>TL;DR: Making documentation for your package is vital, using mkdocs makes that step much easier.</em></p>
 <p>Making documentation is <strong>vital</strong> to the success of your package. If you do not add documentation, not only will no one else understand what you have done, you will not understand what you've done in two years time.</p>
+<p>There are a few tools to help you make websites/documentation for your tools. Personally, I find <code>mkdocs</code> makes pretty documentation, and has the easiest to remember commands. For me, it's the easiest tool. However, you might prefer other tools, like <code>sphinx</code>.</p>
 <h3 id="do-i-have-to">Do I have to?<a class="anchor-link" href="#Do-I-have-to?">&#182;</a></h3><p>Yep.</p>
 <h3 id="what-counts-as-documentation">What counts as documentation?<a class="anchor-link" href="#What-counts-as-documentation?">&#182;</a></h3><p>Documentation could be inline comments in your code to explain what you're doing and why. Documentation is also docstrings in your functions and classes. These are helpful (read: crucial) for users to understand how to interact with your functions and classes. Documentation is also README files, webpages, and tutorials. You should do at least some of these!</p>
 <h3 id="how-do-i-do-it-with-minimal-effort">How do I do it with minimal effort?<a class="anchor-link" href="#How-do-I-do-it-with-minimal-effort?">&#182;</a></h3><p>This is where <code>mkdocs</code> comes in! <code>mkdocs</code> will turn your docstrings into a nice website for you.</p>
@@ -1262,13 +1263,13 @@ plugins:
       
       
         
-        <a href="github_actions.html" class="md-footer__link md-footer__link--next" aria-label="Next: GitHub Actions" rel="next">
+        <a href="black_flake8.html" class="md-footer__link md-footer__link--next" aria-label="Next: black and flake8" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              GitHub Actions
+              black and flake8
             </div>
           </div>
           <div class="md-footer__button md-icon">
