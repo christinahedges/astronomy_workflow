@@ -14,7 +14,7 @@
     
     
       
-        <title>Making tests with pytest - Astronomy Workflow</title>
+        <title>Making tests for your Python tools with pytest - Astronomy Workflow</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#making-tests-with-pytest" class="md-skip">
+        <a href="#making-tests-for-your-python-tools-with-pytest" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Making tests with pytest
+              Making tests for your Python tools with pytest
             
           </span>
         </div>
@@ -322,9 +322,81 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Making tests for your Python tools with pytest
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="pytest.html" class="md-nav__link md-nav__link--active">
-        Making tests with pytest
+        Making tests for your Python tools with pytest
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-unit-tests" class="md-nav__link">
+    What are unit tests?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-i-have-to-make-tests" class="md-nav__link">
+    Do I have to make tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-should-i-make-tests" class="md-nav__link">
+    How should I make tests?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#but-really-how-should-i-write-a-test" class="md-nav__link">
+    But really how should I write a test?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests-and-merging-pull-requests" class="md-nav__link">
+    Tests and merging pull requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directory-structures" class="md-nav__link">
+    Directory structures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coverage" class="md-nav__link">
+    Coverage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -480,6 +552,63 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-unit-tests" class="md-nav__link">
+    What are unit tests?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-i-have-to-make-tests" class="md-nav__link">
+    Do I have to make tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-should-i-make-tests" class="md-nav__link">
+    How should I make tests?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#but-really-how-should-i-write-a-test" class="md-nav__link">
+    But really how should I write a test?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests-and-merging-pull-requests" class="md-nav__link">
+    Tests and merging pull requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directory-structures" class="md-nav__link">
+    Directory structures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coverage" class="md-nav__link">
+    Coverage
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -998,17 +1127,62 @@ all of MD as it is not optimized for dense, information rich UIs.
     <!-- End of mathjax configuration --><div class="jupyter-wrapper">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="making-tests-with-pytest">Making tests with pytest<a class="anchor-link" href="#Making-tests-with-pytest">&#182;</a></h1>
+<h1 id="making-tests-for-your-python-tools-with-pytest">Making tests for your Python tools with pytest<a class="anchor-link" href="#Making-tests-for-your-Python-tools-with-pytest">&#182;</a></h1><p><em>TL;DR: Testing let's you make tools that tell you when they're breaking. Tests are both a fantastic way to develop, and a fantastic resource for maintaining your tools.</em></p>
+<p>You can click <a href="https://colab.research.google.com/github/christinahedges/astronomy_workflow/blob/main/docs/notebooks/1.0-basics/demo.ipynb">here</a> to open this page in Google Colab, which will let you execute this tutorial!</p>
+
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="what-are-unit-tests">What are unit tests?<a class="anchor-link" href="#What-are-unit-tests?">&#182;</a></h2><p>Unit tests are small, simple functions which test (ideally) a single part of your tool. Tests check that all parts of your code work correctly ("pass") and can be run on different machines and architectures so you know your users won't have issues.</p>
+<h2 id="do-i-have-to-make-tests">Do I have to make tests<a class="anchor-link" href="#Do-I-have-to-make-tests">&#182;</a></h2><p>You don't have to, but it will make your package much more usable, and much easier to maintain and fix. It is recommended.</p>
+<h2 id="how-should-i-make-tests">How should I make tests?<a class="anchor-link" href="#How-should-I-make-tests?">&#182;</a></h2><p>This is really up to you, but there a few sorts of approaches;</p>
+<ol>
+<li>Build the code, and then test it. This lets you be flexible when designing, but can be a headache to actually test in the end.</li>
+<li>Build the tests, and then write the code. This is known as test driven development, and can be very powerful. You start with tests that should pass, and write code to make sure they do. </li>
+<li>Test as you go. This is a pretty good approach, as you're writing functions and tools, make sure you're adding tests for each new piece of functionality. This means that as you develop, you'll know whether your new functionality breaks your established functionality. </li>
+</ol>
+<p>If you find that you have a bug in your code, or something is not behaving in the way that you expected, starting by writing a test that should pass can be a great way to fix that problem and ensure that it doesn't happen again.</p>
+<h2 id="but-really-how-should-i-write-a-test">But really how should I write a test?<a class="anchor-link" href="#But-really-how-should-I-write-a-test?">&#182;</a></h2><p>We'll do some demos below.</p>
+<h2 id="tests-and-merging-pull-requests">Tests and merging pull requests<a class="anchor-link" href="#Tests-and-merging-pull-requests">&#182;</a></h2><p>Sometimes you or one or your users will open a pull request against your tool, or will try to add functionality. Having tests is an excellent way to ensure that features being added by new users do not break your original tool. It's good practice to make sure that any pull request that is opened against your tool includes testing.</p>
+<h2 id="directory-structures">Directory structures<a class="anchor-link" href="#Directory-structures">&#182;</a></h2><p>There are a few ways to structure your directories but this is the one I like</p>
+
+<pre><code>my-package/
+... src/
+....... my-package/
+........... __init__.py
+........... package.py
+........... data/
+........... package_data.fits
+... tests/
+....... __init__.py
+....... test_package.py
+....... data/
+........... test_data.fits</code></pre>
+<h2 id="coverage">Coverage<a class="anchor-link" href="#Coverage">&#182;</a></h2><p>There are some tools (e.g. <a href="https://about.codecov.io/">codecov</a>) which can test the "coverage" of your tests, i.e. how many lines of your code are being called by your tests. Having high coverage means less room for error.</p>
+<h1 id="demonstration">Demonstration<a class="anchor-link" href="#Demonstration">&#182;</a></h1><p>Here we'll go over a quick demonstration of how to test some functions.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>First, we're going to make a very simple function, which adds 10 to a value we pass in.</p>
+<p>We're using the <code>writefile</code> jupyter magic to write this function to a file called <code>func.py</code>.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class="highlight-ipynb hl-python"><pre><span></span>
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+<span class="c1"># Everything below here will get written</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">10</span>
 </pre></div>
 
         </div>
@@ -1017,6 +1191,465 @@ all of MD as it is not optimized for dense, information rich UIs.
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Overwriting test_func.py
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now we're going to write a test for this function. To do this we'll make a new file called <code>test_func.py</code>. This file will have our test in it. We'll</p>
+<ol>
+<li>Import the function that we want to test</li>
+<li>Use the function</li>
+<li>Make assert statements that should be true</li>
+</ol>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+<span class="c1"># Everything below here will get written</span>
+<span class="kn">from</span> <span class="nn">func</span> <span class="kn">import</span> <span class="n">func</span>
+<span class="k">def</span> <span class="nf">test_func</span><span class="p">():</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">20</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Overwriting test_func.py
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Then we can execute the test. Usually you'd do this from the terminal command line, but here we'll do it from within the notebook so that you can see it in this tutorial.</p>
+<p>To run the test we use</p>
+
+<pre><code>pytest test_func.py</code></pre>
+<p>but we could have also run</p>
+
+<pre><code>pytest .</code></pre>
+<p>to run in this directory or</p>
+
+<pre><code>pytest test_func.py::test_func</code></pre>
+<p>To run a specific test in the file.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">pytest</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.8.7, pytest-6.2.3, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/ch/repos/astronomy_workflow/docs/notebooks/2.0-testing
+plugins: anyio-2.2.0
+collected 1 item                                                               
+
+test_func.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">                                                           [100%]</span>
+
+<span class="ansi-green-fg">============================== </span><span class="ansi-green-intense-fg ansi-bold">1 passed</span><span class="ansi-green-fg"> in 0.09s</span><span class="ansi-green-fg"> ===============================</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>When we run the test we see first some information about how the tests were run, and then a progress bar next to the file. Green dots mean a passing test, yellow mean a test that passes but with a warning, and red is a failing test. Let's try making a failing test and see what that looks like</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+<span class="c1"># Everything below here will get written</span>
+<span class="kn">from</span> <span class="nn">func</span> <span class="kn">import</span> <span class="n">func</span>
+<span class="k">def</span> <span class="nf">test_func</span><span class="p">():</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">23</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Overwriting test_func.py
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">pytest</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.8.7, pytest-6.2.3, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/ch/repos/astronomy_workflow/docs/notebooks/2.0-testing
+plugins: anyio-2.2.0
+collected 1 item                                                               
+
+test_func.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">                                                           [100%]</span>
+
+<span class="ansi-green-fg">============================== </span><span class="ansi-green-intense-fg ansi-bold">1 passed</span><span class="ansi-green-fg"> in 0.07s</span><span class="ansi-green-fg"> ===============================</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This time the test failed, and pytest shows us exactly where the test failed. Let's try writing a second test.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+<span class="c1"># Everything below here will get written</span>
+<span class="kn">from</span> <span class="nn">func</span> <span class="kn">import</span> <span class="n">func</span>
+<span class="k">def</span> <span class="nf">test_func_int</span><span class="p">():</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">20</span>
+    
+<span class="k">def</span> <span class="nf">test_func_str</span><span class="p">():</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="s1">&#39;christina&#39;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">20</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Overwriting test_func.py
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">pytest</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.8.7, pytest-6.2.3, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/ch/repos/astronomy_workflow/docs/notebooks/2.0-testing
+plugins: anyio-2.2.0
+collected 2 items                                                              
+
+test_func.py <span class="ansi-green-fg">.</span><span class="ansi-red-fg">F</span><span class="ansi-red-fg">                                                          [100%]</span>
+
+=================================== FAILURES ===================================
+<span class="ansi-red-intense-fg ansi-bold">________________________________ test_func_str _________________________________</span>
+
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_func_str</span>():
+&gt;       y = func(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">christina</span><span class="ansi-yellow-fg">&#39;</span>)
+
+<span class="ansi-red-intense-fg ansi-bold">test_func.py</span>:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+x = &#39;christina&#39;
+
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">func</span>(x):
+&gt;       <span class="ansi-blue-intense-fg">return</span> x + <span class="ansi-blue-intense-fg">10</span>
+<span class="ansi-red-intense-fg ansi-bold">E       TypeError: can only concatenate str (not &#34;int&#34;) to str</span>
+
+<span class="ansi-red-intense-fg ansi-bold">func.py</span>:3: TypeError
+=========================== short test summary info ============================
+FAILED test_func.py::test_func_str - TypeError: can only concatenate str (not...
+<span class="ansi-red-fg">========================= </span><span class="ansi-red-intense-fg ansi-bold">1 failed</span>, <span class="ansi-green-fg">1 passed</span><span class="ansi-red-fg"> in 0.17s</span><span class="ansi-red-fg"> ==========================</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This time, the first test passes, and the second one fails. We could use the debug command to try to inspect the variables if we wanted to</p>
+
+<pre><code>pytest --pdb test_func.py</code></pre>
+<p>Let's make this a passing test. First, let's tell the test if we pass a <code>string</code>, the test should fail.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+<span class="c1"># Everything below here will get written</span>
+<span class="kn">from</span> <span class="nn">func</span> <span class="kn">import</span> <span class="n">func</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+<span class="k">def</span> <span class="nf">test_func_int</span><span class="p">():</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">20</span>
+    
+<span class="k">def</span> <span class="nf">test_func_str</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="s1">&#39;christina&#39;</span><span class="p">)</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Overwriting test_func.py
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">pytest</span> <span class="n">test_func</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.8.7, pytest-6.2.3, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/ch/repos/astronomy_workflow/docs/notebooks/2.0-testing
+plugins: anyio-2.2.0
+collected 2 items                                                              
+
+test_func.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">                                                          [100%]</span>
+
+<span class="ansi-green-fg">============================== </span><span class="ansi-green-intense-fg ansi-bold">2 passed</span><span class="ansi-green-fg"> in 0.08s</span><span class="ansi-green-fg"> ===============================</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now we've told pytest that if you pass a <code>string</code> to <code>func</code>, it should raise a TypeError.</p>
+<p>We can write more elaborate tests for more functions, but this should be enough to get you started. Once you've finished building tests, if you have your code archived on GitHub, you can set up actions to automatically run these tests and check your code is always passing!</p>
+
+</div>
 </div>
 </div>
 
