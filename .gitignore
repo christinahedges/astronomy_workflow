@@ -1,5 +1,8 @@
-docs/notebooks/*/.ipynb_checkpoints/
-docs/notebooks/*/demo
+docs/notebooks/*/.ipynb_checkpoints
+docs/notebooks/*/demo*
+docs/notebooks/*/*.py
+docs/notebooks/*/__pycache__
+
 site
 init
 Makefile
