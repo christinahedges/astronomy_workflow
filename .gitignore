@@ -2,7 +2,7 @@ docs/notebooks/*/.ipynb_checkpoints
 docs/notebooks/*/demo*
 docs/notebooks/*/*.py
 docs/notebooks/*/__pycache__
-
+docs/notebooks/*/.DS_store
 site
 init
 Makefile
