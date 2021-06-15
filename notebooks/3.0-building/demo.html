@@ -450,6 +450,31 @@
   
 
     
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="demo.html" class="md-nav__link md-nav__link--active">
+        Demonstration: How to use these tools
+      </a>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1055,7 +1080,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>/Users/ch/HST/repos/astronomy_workflow/docs/notebooks/3.0-building/demo
+<pre>/Users/ch/repos/astronomy_workflow/docs/notebooks/3.0-building/demo
 </pre>
 </div>
 </div>
@@ -1073,7 +1098,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1099,14 +1124,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>* system (set by /Users/ch/.pyenv/version)
-  3.7.9
-  3.8.0
-  3.8.0/envs/mappers
-  3.8.0/envs/ombre
-  3.8.7
-  mappers
-  ombre
+<pre>  system
+* 3.8.7 (set by PYENV_VERSION environment variable)
+  3.8.7/envs/tess-asteroids
+  3.9.1
+  3.9.1/envs/tess-backdrop
+  tess-asteroids
+  tess-backdrop
 </pre>
 </div>
 </div>
@@ -1124,12 +1148,12 @@ all of MD as it is not optimized for dense, information rich UIs.
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">pyenv</span> <span class="n">virtualenv</span> <span class="mf">3.8</span><span class="o">.</span><span class="mi">0</span> <span class="n">demo</span>
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">pyenv</span> <span class="n">virtualenv</span> <span class="mf">3.8</span><span class="o">.</span><span class="mi">7</span> <span class="n">demo</span>
 </pre></div>
 
         </div>
@@ -1150,9 +1174,14 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Looking in links: /var/folders/yn/f2r51bxd7pj58243x2y_c6340000gn/T/tmpmuz1wv5b
-Requirement already satisfied: setuptools in /Users/ch/.pyenv/versions/3.8.0/envs/demo/lib/python3.8/site-packages (41.2.0)
-Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/lib/python3.8/site-packages (19.2.3)
+<pre>created virtual environment CPython3.8.7.final.0-64 in 313ms
+  creator CPython3Posix(dest=/Users/ch/.pyenv/versions/3.8.7/envs/demo, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/Users/ch/Library/Application Support/virtualenv)
+    added seed packages: pip==21.0.1, setuptools==56.2.0, wheel==0.36.2
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+Looking in links: /var/folders/pz/0x8sm5hj44q6gx0qg_6n00xw0000gn/T/tmpyjn36ke2
+Requirement already satisfied: setuptools in /Users/ch/.pyenv/versions/3.8.7/envs/demo/lib/python3.8/site-packages (56.2.0)
+Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.7/envs/demo/lib/python3.8/site-packages (21.0.1)
 </pre>
 </div>
 </div>
@@ -1164,7 +1193,7 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1190,16 +1219,15 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>* system (set by /Users/ch/.pyenv/version)
-  3.7.9
-  3.8.0
-  3.8.0/envs/demo
-  3.8.0/envs/mappers
-  3.8.0/envs/ombre
-  3.8.7
+<pre>  system
+* 3.8.7 (set by PYENV_VERSION environment variable)
+  3.8.7/envs/demo
+  3.8.7/envs/tess-asteroids
+  3.9.1
+  3.9.1/envs/tess-backdrop
   demo
-  mappers
-  ombre
+  tess-asteroids
+  tess-backdrop
 </pre>
 </div>
 </div>
@@ -1217,7 +1245,7 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1234,7 +1262,7 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1260,7 +1288,7 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>demo (set by /Users/ch/HST/repos/astronomy_workflow/docs/notebooks/3.0-building/demo/.python-version)
+<pre>3.8.7 (set by PYENV_VERSION environment variable)
 </pre>
 </div>
 </div>
@@ -1272,7 +1300,7 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1298,7 +1326,7 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>/Users/ch/.pyenv/versions/demo/bin/pip
+<pre>/Users/ch/.pyenv/versions/3.8.7/bin/pip
 </pre>
 </div>
 </div>
@@ -1316,7 +1344,7 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1342,82 +1370,39 @@ Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.0/envs/demo/
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Collecting poetry
-  Downloading poetry-1.1.6-py2.py3-none-any.whl (172 kB)
-     |████████████████████████████████| 172 kB 611 kB/s eta 0:00:01
-Requirement already satisfied: pip in /Users/ch/miniconda3/lib/python3.6/site-packages (21.1.2)
-Requirement already satisfied: packaging&lt;21.0,&gt;=20.4 in /Users/ch/miniconda3/lib/python3.6/site-packages (from poetry) (20.9)
-Collecting poetry-core&lt;1.1.0,&gt;=1.0.3
-  Using cached poetry_core-1.0.3-py2.py3-none-any.whl (424 kB)
-Collecting virtualenv&lt;21.0.0,&gt;=20.0.26
-  Downloading virtualenv-20.4.7-py2.py3-none-any.whl (7.2 MB)
-     |████████████████████████████████| 7.2 MB 808 kB/s eta 0:00:01
-Collecting importlib-metadata&lt;2.0.0,&gt;=1.6.0
-  Using cached importlib_metadata-1.7.0-py2.py3-none-any.whl (31 kB)
-Collecting pexpect&lt;5.0.0,&gt;=4.7.0
-  Using cached pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
-Collecting clikit&lt;0.7.0,&gt;=0.6.2
-  Downloading clikit-0.6.2-py2.py3-none-any.whl (91 kB)
-     |████████████████████████████████| 91 kB 1.0 MB/s eta 0:00:01
-Requirement already satisfied: pkginfo&lt;2.0,&gt;=1.4 in /Users/ch/miniconda3/lib/python3.6/site-packages (from poetry) (1.4.2)
-Collecting crashtest&lt;0.4.0,&gt;=0.3.0
-  Downloading crashtest-0.3.1-py3-none-any.whl (7.0 kB)
-Collecting keyring&lt;22.0.0,&gt;=21.2.0
-  Downloading keyring-21.8.0-py3-none-any.whl (32 kB)
-Collecting requests-toolbelt&lt;0.10.0,&gt;=0.9.1
-  Downloading requests_toolbelt-0.9.1-py2.py3-none-any.whl (54 kB)
-     |████████████████████████████████| 54 kB 1.3 MB/s eta 0:00:01
-Collecting shellingham&lt;2.0,&gt;=1.1
-  Downloading shellingham-1.4.0-py2.py3-none-any.whl (9.4 kB)
-Collecting tomlkit&lt;1.0.0,&gt;=0.7.0
-  Downloading tomlkit-0.7.2-py2.py3-none-any.whl (32 kB)
-Collecting cleo&lt;0.9.0,&gt;=0.8.1
-  Downloading cleo-0.8.1-py2.py3-none-any.whl (21 kB)
-Collecting cachy&lt;0.4.0,&gt;=0.3.0
-  Downloading cachy-0.3.0-py2.py3-none-any.whl (20 kB)
-Requirement already satisfied: html5lib&lt;2.0,&gt;=1.0 in /Users/ch/miniconda3/lib/python3.6/site-packages (from poetry) (1.0.1)
-Collecting cachecontrol[filecache]&lt;0.13.0,&gt;=0.12.4
-  Downloading CacheControl-0.12.6-py2.py3-none-any.whl (19 kB)
-Requirement already satisfied: requests&lt;3.0,&gt;=2.18 in /Users/ch/miniconda3/lib/python3.6/site-packages (from poetry) (2.25.1)
-Requirement already satisfied: msgpack&gt;=0.5.2 in /Users/ch/miniconda3/lib/python3.6/site-packages (from cachecontrol[filecache]&lt;0.13.0,&gt;=0.12.4-&gt;poetry) (1.0.0)
-Collecting lockfile&gt;=0.9
-  Downloading lockfile-0.12.2-py2.py3-none-any.whl (13 kB)
-Collecting pastel&lt;0.3.0,&gt;=0.2.0
-  Downloading pastel-0.2.1-py2.py3-none-any.whl (6.0 kB)
-Collecting pylev&lt;2.0,&gt;=1.3
-  Downloading pylev-1.4.0-py2.py3-none-any.whl (6.1 kB)
-Requirement already satisfied: webencodings in /Users/ch/miniconda3/lib/python3.6/site-packages (from html5lib&lt;2.0,&gt;=1.0-&gt;poetry) (0.5.1)
-Requirement already satisfied: six&gt;=1.9 in /Users/ch/miniconda3/lib/python3.6/site-packages (from html5lib&lt;2.0,&gt;=1.0-&gt;poetry) (1.15.0)
-Requirement already satisfied: zipp&gt;=0.5 in /Users/ch/miniconda3/lib/python3.6/site-packages (from importlib-metadata&lt;2.0.0,&gt;=1.6.0-&gt;poetry) (3.4.0)
-Requirement already satisfied: pyparsing&gt;=2.0.2 in /Users/ch/miniconda3/lib/python3.6/site-packages (from packaging&lt;21.0,&gt;=20.4-&gt;poetry) (2.2.0)
-Requirement already satisfied: ptyprocess&gt;=0.5 in /Users/ch/miniconda3/lib/python3.6/site-packages (from pexpect&lt;5.0.0,&gt;=4.7.0-&gt;poetry) (0.5.2)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /Users/ch/miniconda3/lib/python3.6/site-packages (from requests&lt;3.0,&gt;=2.18-&gt;poetry) (2020.11.8)
-Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /Users/ch/miniconda3/lib/python3.6/site-packages (from requests&lt;3.0,&gt;=2.18-&gt;poetry) (3.0.4)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Users/ch/miniconda3/lib/python3.6/site-packages (from requests&lt;3.0,&gt;=2.18-&gt;poetry) (2.10)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Users/ch/miniconda3/lib/python3.6/site-packages (from requests&lt;3.0,&gt;=2.18-&gt;poetry) (1.22)
-Collecting importlib-resources&gt;=1.0
-  Downloading importlib_resources-5.1.4-py3-none-any.whl (26 kB)
-Requirement already satisfied: filelock&lt;4,&gt;=3.0.0 in /Users/ch/miniconda3/lib/python3.6/site-packages (from virtualenv&lt;21.0.0,&gt;=20.0.26-&gt;poetry) (3.0.12)
-Requirement already satisfied: appdirs&lt;2,&gt;=1.4.3 in /Users/ch/miniconda3/lib/python3.6/site-packages (from virtualenv&lt;21.0.0,&gt;=20.0.26-&gt;poetry) (1.4.3)
-Collecting distlib&lt;1,&gt;=0.3.1
-  Downloading distlib-0.3.2-py2.py3-none-any.whl (338 kB)
-     |████████████████████████████████| 338 kB 1.0 MB/s eta 0:00:01
-Installing collected packages: pylev, pastel, crashtest, lockfile, importlib-resources, importlib-metadata, distlib, clikit, cachecontrol, virtualenv, tomlkit, shellingham, requests-toolbelt, poetry-core, pexpect, keyring, cleo, cachy, poetry
-  Attempting uninstall: importlib-metadata
-    Found existing installation: importlib-metadata 4.5.0
-    Uninstalling importlib-metadata-4.5.0:
-      Successfully uninstalled importlib-metadata-4.5.0
-  Attempting uninstall: virtualenv
-    Found existing installation: virtualenv 15.1.0
-    Uninstalling virtualenv-15.1.0:
-      Successfully uninstalled virtualenv-15.1.0
-  Attempting uninstall: requests-toolbelt
-    Found existing installation: requests-toolbelt 0.8.0
-    Uninstalling requests-toolbelt-0.8.0:
-      Successfully uninstalled requests-toolbelt-0.8.0
-  Attempting uninstall: pexpect
-    Found existing installation: pexpect 4.4.0
-<span class="ansi-red-fg">ERROR: Cannot uninstall &#39;pexpect&#39;. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.</span>
+<pre>Requirement already satisfied: poetry in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (1.1.6)
+Requirement already satisfied: pip in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (21.1.2)
+Requirement already satisfied: requests-toolbelt&lt;0.10.0,&gt;=0.9.1 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (0.9.1)
+Requirement already satisfied: shellingham&lt;2.0,&gt;=1.1 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (1.4.0)
+Requirement already satisfied: tomlkit&lt;1.0.0,&gt;=0.7.0 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (0.7.0)
+Requirement already satisfied: pexpect&lt;5.0.0,&gt;=4.7.0 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (4.8.0)
+Requirement already satisfied: cleo&lt;0.9.0,&gt;=0.8.1 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (0.8.1)
+Requirement already satisfied: cachecontrol[filecache]&lt;0.13.0,&gt;=0.12.4 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (0.12.6)
+Requirement already satisfied: requests&lt;3.0,&gt;=2.18 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (2.25.1)
+Requirement already satisfied: pkginfo&lt;2.0,&gt;=1.4 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (1.7.0)
+Requirement already satisfied: crashtest&lt;0.4.0,&gt;=0.3.0 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (0.3.1)
+Requirement already satisfied: poetry-core&lt;1.1.0,&gt;=1.0.3 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (1.0.3)
+Requirement already satisfied: packaging&lt;21.0,&gt;=20.4 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (20.9)
+Requirement already satisfied: virtualenv&lt;21.0.0,&gt;=20.0.26 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (20.4.4)
+Requirement already satisfied: clikit&lt;0.7.0,&gt;=0.6.2 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (0.6.2)
+Requirement already satisfied: html5lib&lt;2.0,&gt;=1.0 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (1.1)
+Requirement already satisfied: cachy&lt;0.4.0,&gt;=0.3.0 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (0.3.0)
+Requirement already satisfied: keyring&lt;22.0.0,&gt;=21.2.0 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from poetry) (21.8.0)
+Requirement already satisfied: msgpack&gt;=0.5.2 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from cachecontrol[filecache]&lt;0.13.0,&gt;=0.12.4-&gt;poetry) (1.0.2)
+Requirement already satisfied: lockfile&gt;=0.9 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from cachecontrol[filecache]&lt;0.13.0,&gt;=0.12.4-&gt;poetry) (0.12.2)
+Requirement already satisfied: pastel&lt;0.3.0,&gt;=0.2.0 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from clikit&lt;0.7.0,&gt;=0.6.2-&gt;poetry) (0.2.1)
+Requirement already satisfied: pylev&lt;2.0,&gt;=1.3 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from clikit&lt;0.7.0,&gt;=0.6.2-&gt;poetry) (1.3.0)
+Requirement already satisfied: six&gt;=1.9 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from html5lib&lt;2.0,&gt;=1.0-&gt;poetry) (1.15.0)
+Requirement already satisfied: webencodings in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from html5lib&lt;2.0,&gt;=1.0-&gt;poetry) (0.5.1)
+Requirement already satisfied: pyparsing&gt;=2.0.2 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from packaging&lt;21.0,&gt;=20.4-&gt;poetry) (2.4.7)
+Requirement already satisfied: ptyprocess&gt;=0.5 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from pexpect&lt;5.0.0,&gt;=4.7.0-&gt;poetry) (0.7.0)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from requests&lt;3.0,&gt;=2.18-&gt;poetry) (1.26.4)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from requests&lt;3.0,&gt;=2.18-&gt;poetry) (2020.12.5)
+Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from requests&lt;3.0,&gt;=2.18-&gt;poetry) (2.10)
+Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from requests&lt;3.0,&gt;=2.18-&gt;poetry) (4.0.0)
+Requirement already satisfied: filelock&lt;4,&gt;=3.0.0 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from virtualenv&lt;21.0.0,&gt;=20.0.26-&gt;poetry) (3.0.12)
+Requirement already satisfied: distlib&lt;1,&gt;=0.3.1 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from virtualenv&lt;21.0.0,&gt;=20.0.26-&gt;poetry) (0.3.1)
+Requirement already satisfied: appdirs&lt;2,&gt;=1.4.3 in /Users/ch/.pyenv/versions/3.8.7/lib/python3.8/site-packages (from virtualenv&lt;21.0.0,&gt;=20.0.26-&gt;poetry) (1.4.4)
 </pre>
 </div>
 </div>
@@ -1435,7 +1420,7 @@ Installing collected packages: pylev, pastel, crashtest, lockfile, importlib-res
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1473,7 +1458,7 @@ Installing collected packages: pylev, pastel, crashtest, lockfile, importlib-res
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1499,7 +1484,7 @@ Installing collected packages: pylev, pastel, crashtest, lockfile, importlib-res
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>/Users/ch/HST/repos/astronomy_workflow/docs/notebooks/3.0-building/demo/demo
+<pre>/Users/ch/repos/astronomy_workflow/docs/notebooks/3.0-building/demo/demo
 </pre>
 </div>
 </div>
@@ -1511,7 +1496,7 @@ Installing collected packages: pylev, pastel, crashtest, lockfile, importlib-res
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
@@ -1549,24 +1534,1514 @@ Installing collected packages: pylev, pastel, crashtest, lockfile, importlib-res
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Now we can see that poetry has made a README, a pyproject.toml file, and a directory for tests and code. Let's add some development dependencies.</p>
+<p>Now we can see that poetry has made a README, a pyproject.toml file, and a directory for tests and code. Let's add some dependencies.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class="highlight-ipynb hl-python"><pre><span></span>
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">poetry</span> <span class="n">add</span> <span class="n">numpy</span>
 </pre></div>
 
         </div>
     </div>
 
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Using version <span class="ansi-bold">^1.20.3</span> for <span class="ansi-cyan-fg">numpy</span>
+
+<span class="ansi-blue-fg">Updating dependencies</span>
+<span class="ansi-blue-fg">Resolving dependencies...</span> (0.2s)
+
+<span class="ansi-blue-fg">Writing lock file</span>
+
+<span class="ansi-bold">Package operations</span>: <span class="ansi-blue-fg">1</span> install, <span class="ansi-blue-fg">0</span> updates, <span class="ansi-blue-fg">0</span> removals
+
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">numpy</span> (<span class="ansi-bold">1.20.3</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">numpy</span> (<span class="ansi-bold">1.20.3</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">numpy</span> (<span class="ansi-green-fg">1.20.3</span>)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This looks great, we've installed <code>numpy</code> as a dependency of our tool. If we like, we can also install development dependencies.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># I&#39;ve run this twice, the output is very long!</span>
+<span class="err">!</span> <span class="n">poetry</span> <span class="n">add</span> <span class="o">-</span><span class="n">D</span> <span class="n">jupyterlab</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>The following packages are already present in the pyproject.toml and will be skipped:
+
+  • <span class="ansi-cyan-fg">jupyterlab</span>
+
+If you want to update it to the latest compatible version, you can use `poetry update package`.
+If you prefer to upgrade it to the latest available version, you can use `poetry add package@latest`.
+
+Nothing to add.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Note that adding in the <code>-D</code> flag makes sure we're only adding this tool in development mode. We don't want users to be forced to add <code>jupyterlab</code> just to install our tool! If we want to use the <code>mkdocs</code> tool to make our docs, we might also want to install <code>mkdocs</code> as a development dependency.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># These install mkdocs, the mkdocstrings add-on for parsing doc strings and the material theme</span>
+<span class="err">!</span> <span class="n">poetry</span> <span class="n">add</span> <span class="o">-</span><span class="n">D</span> <span class="n">mkdocs</span> <span class="n">mkdocstrings</span> <span class="n">mkdocs</span><span class="o">-</span><span class="n">material</span>
+<span class="c1"># This installs the numpy-style for pytkdocs so mkdocs can parse our numpy-doc style doc strings</span>
+<span class="err">!</span> <span class="n">poetry</span> <span class="n">add</span> <span class="o">-</span><span class="n">D</span> <span class="n">pytkdocs</span> <span class="o">-</span><span class="n">E</span> <span class="n">numpy</span><span class="o">-</span><span class="n">style</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Using version <span class="ansi-bold">^1.2.1</span> for <span class="ansi-cyan-fg">mkdocs</span>
+Using version <span class="ansi-bold">^0.15.2</span> for <span class="ansi-cyan-fg">mkdocstrings</span>
+Using version <span class="ansi-bold">^7.1.8</span> for <span class="ansi-cyan-fg">mkdocs-material</span>
+
+<span class="ansi-blue-fg">Updating dependencies</span>
+<span class="ansi-blue-fg">Resolving dependencies...</span> (2.5s)<span class="ansi-blue-fg">Resolving dependencies...</span> (0.8s)<span class="ansi-blue-fg">Resolving dependencies...</span> (2.3s)
+
+<span class="ansi-blue-fg">Writing lock file</span>
+
+<span class="ansi-bold">Package operations</span>: <span class="ansi-blue-fg">15</span> installs, <span class="ansi-blue-fg">0</span> updates, <span class="ansi-blue-fg">0</span> removals
+
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml</span> (<span class="ansi-bold">5.4.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">zipp</span> (<span class="ansi-bold">3.4.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">zipp</span> (<span class="ansi-bold">3.4.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml</span> (<span class="ansi-bold">5.4.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">zipp</span> (<span class="ansi-bold">3.4.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">zipp</span> (<span class="ansi-bold">3.4.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">zipp</span> (<span class="ansi-green-fg">3.4.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">zipp</span> (<span class="ansi-green-fg">3.4.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml</span> (<span class="ansi-green-fg">5.4.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">zipp</span> (<span class="ansi-green-fg">3.4.1</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">click</span> (<span class="ansi-bold">8.0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">click</span> (<span class="ansi-bold">8.0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">click</span> (<span class="ansi-green-fg">8.0.1</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-bold">2.0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-bold">4.5.0</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-bold">1.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-green-fg">1.3.4</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-green-fg">1.3.4</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-green-fg">4.5.0</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-bold">3.3.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-green-fg">1.3.4</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-bold">0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-green-fg">0.1</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-bold">2.1.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-green-fg">2.1.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-green-fg">1.3.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-green-fg">0.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-green-fg">2.1.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-green-fg">3.3.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-green-fg">1.3.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-green-fg">0.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-green-fg">2.1.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-green-fg">4.5.0</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-green-fg">3.3.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-green-fg">1.3.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-green-fg">0.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-green-fg">2.1.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">ghp-import</span> (<span class="ansi-green-fg">2.0.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">importlib-metadata</span> (<span class="ansi-green-fg">4.5.0</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">markdown</span> (<span class="ansi-green-fg">3.3.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mergedeep</span> (<span class="ansi-green-fg">1.3.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pyyaml-env-tag</span> (<span class="ansi-green-fg">0.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">watchdog</span> (<span class="ansi-green-fg">2.1.2</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-bold">1.2.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-bold">1.2.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-bold">1.2.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">10%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-bold">1.2.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">40%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-bold">1.2.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">70%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-bold">1.2.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-bold">1.2.1</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-bold">1.2.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs</span> (<span class="ansi-green-fg">1.2.1</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-autorefs</span> (<span class="ansi-bold">0.2.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material-extensions</span> (<span class="ansi-bold">1.0.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material-extensions</span> (<span class="ansi-bold">1.0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material-extensions</span> (<span class="ansi-bold">1.0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-autorefs</span> (<span class="ansi-bold">0.2.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material-extensions</span> (<span class="ansi-bold">1.0.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material-extensions</span> (<span class="ansi-green-fg">1.0.1</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material-extensions</span> (<span class="ansi-green-fg">1.0.1</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-autorefs</span> (<span class="ansi-green-fg">0.2.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material-extensions</span> (<span class="ansi-green-fg">1.0.1</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-bold">8.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pymdown-extensions</span> (<span class="ansi-green-fg">8.2</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material</span> (<span class="ansi-bold">7.1.8</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material</span> (<span class="ansi-bold">7.1.8</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material</span> (<span class="ansi-bold">7.1.8</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">30%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material</span> (<span class="ansi-bold">7.1.8</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">80%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material</span> (<span class="ansi-bold">7.1.8</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material</span> (<span class="ansi-bold">7.1.8</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material</span> (<span class="ansi-bold">7.1.8</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-bold">0.15.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-green-fg">0.15.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-green-fg">0.15.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocs-material</span> (<span class="ansi-green-fg">7.1.8</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mkdocstrings</span> (<span class="ansi-green-fg">0.15.2</span>)
+The following packages are already present in the pyproject.toml and will be skipped:
+
+  • <span class="ansi-cyan-fg">pytkdocs</span>
+
+If you want to update it to the latest compatible version, you can use `poetry update package`.
+If you prefer to upgrade it to the latest available version, you can use `poetry add package@latest`.
+
+Nothing to add.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now that we have <code>mkdocs</code> installed, we could initialize some docs</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">poetry</span> <span class="n">run</span> <span class="n">mkdocs</span> <span class="n">new</span> <span class="o">.</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>INFO     -  Writing config file: ./mkdocs.yml
+INFO     -  Writing initial docs: ./docs/index.md
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">ls</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>README.rst     mkdocs.yml     pyproject.toml <span class="ansi-blue-fg">tests</span>
+<span class="ansi-blue-fg">docs</span>           poetry.lock    <span class="ansi-blue-fg">src</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now we have a <code>mkdocs.yml</code> file, and a <code>docs</code> directory.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">ls</span> <span class="n">docs</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>index.md
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Easy! Let's write a function.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">src</span><span class="o">/</span><span class="n">demo</span><span class="o">/</span><span class="n">demo</span><span class="o">.</span><span class="n">py</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="k">def</span> <span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Function to create sin(x)</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    x : np.ndarray, float </span>
+<span class="sd">        Input x values</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    result : np.ndarray</span>
+<span class="sd">        Sine of x.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Writing src/demo/demo.py
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now let's write a test!</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">tests</span><span class="o">/</span><span class="n">test_sin</span><span class="o">.</span><span class="n">py</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">demo.demo</span> <span class="kn">import</span> <span class="n">sin</span>
+<span class="k">def</span> <span class="nf">test_sin</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Test that `sin` produces the correct result&quot;&quot;&quot;</span>
+    <span class="k">assert</span> <span class="n">sin</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">assert</span> <span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Writing tests/test_sin.py
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now we can run <code>pytest</code>, and check out tests pass! (Note, you might have to add pytest as a development dependency!)</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">poetry</span> <span class="n">run</span> <span class="n">pytest</span> <span class="n">src</span><span class="o">/</span> <span class="n">tests</span><span class="o">/</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.8.7, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/ch/repos/astronomy_workflow/docs/notebooks/3.0-building/demo/demo
+plugins: anyio-3.1.0
+collected 0 items / 2 errors                                                   <span class="ansi-bold">
+
+==================================== ERRORS ====================================
+</span><span class="ansi-red-intense-fg ansi-bold">_____________________ ERROR collecting tests/test_demo.py ______________________</span>
+<span class="ansi-red-fg">ImportError while importing test module &#39;/Users/ch/repos/astronomy_workflow/docs/notebooks/3.0-building/demo/demo/tests/test_demo.py&#39;.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+tests/test_demo.py:1: in &lt;module&gt;
+    from demo import __version__
+E   ModuleNotFoundError: No module named &#39;demo&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">______________________ ERROR collecting tests/test_sin.py ______________________</span>
+<span class="ansi-red-fg">ImportError while importing test module &#39;/Users/ch/repos/astronomy_workflow/docs/notebooks/3.0-building/demo/demo/tests/test_sin.py&#39;.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+tests/test_sin.py:2: in &lt;module&gt;
+    from demo.demo import sin
+E   ModuleNotFoundError: No module named &#39;demo&#39;</span>
+=========================== short test summary info ============================
+ERROR tests/test_demo.py
+ERROR tests/test_sin.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+<span class="ansi-red-fg">============================== </span><span class="ansi-red-intense-fg ansi-bold">2 errors</span><span class="ansi-red-fg"> in 5.09s</span><span class="ansi-red-fg"> ===============================</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Uh oh, no module named demo?</p>
+<p>We never actually installed our own package! Let's do that now</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">poetry</span> <span class="n">install</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-blue-fg">Installing dependencies from lock file</span>
+
+No dependencies to install or update
+
+<span class="ansi-bold">Installing</span> the current project: <span class="ansi-cyan-fg">demo</span> (<span class="ansi-bold">0.1.0</span><span class="ansi-bold">1mInstalling</span> the current project: <span class="ansi-cyan-fg">demo</span> (<span class="ansi-green-fg">0.1.0</span>)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now we've installed our package, our tests should pass.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">poetry</span> <span class="n">run</span> <span class="n">pytest</span> <span class="n">src</span><span class="o">/</span> <span class="n">tests</span><span class="o">/</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.8.7, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/ch/repos/astronomy_workflow/docs/notebooks/3.0-building/demo/demo
+plugins: anyio-3.1.0
+collected 2 items                                                              
+
+tests/test_demo.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">                                                     [ 50%]</span>
+tests/test_sin.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">                                                      [100%]</span>
+
+<span class="ansi-green-fg">============================== </span><span class="ansi-green-intense-fg ansi-bold">2 passed</span><span class="ansi-green-fg"> in 0.08s</span><span class="ansi-green-fg"> ===============================</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>They do! (Note there is a default test that was initialized by <code>poetry</code>, which checks the version number is 0.1.0!)</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now we have a package with a module, and a passing test, let's create our documentation.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">docs</span><span class="o">/</span><span class="n">demo</span><span class="o">.</span><span class="n">md</span>
+<span class="c1"># Documentation for `demo`</span>
+<span class="p">:::</span> <span class="n">demo</span><span class="o">.</span><span class="n">demo</span>
+    <span class="n">handler</span><span class="p">:</span> <span class="n">python</span>
+    <span class="n">selection</span><span class="p">:</span>
+      <span class="n">members</span><span class="p">:</span>
+        <span class="o">-</span> <span class="n">sin</span>
+    <span class="n">rendering</span><span class="p">:</span>
+      <span class="n">show_root_heading</span><span class="p">:</span> <span class="n">false</span>
+      <span class="n">show_source</span><span class="p">:</span> <span class="n">false</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Writing docs/demo.md
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We're going to need to alter the <code>mkdocs.yaml</code> file, right now it looks like this</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">head</span> <span class="n">mkdocs</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>site_name: My Docs
+site_url: https://example.com/
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let's write the following out to <code>mkdocs.yaml</code>, which will set up our default <code>index.md</code> as the landing page, our new <code>demo.md</code> file, will use the <code>material</code> theme, and will automatically document our docstrings!</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">mkdocs</span><span class="o">.</span><span class="n">yml</span>
+<span class="n">site_name</span><span class="p">:</span> <span class="n">PSFMachine</span>
+<span class="n">nav</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">Home</span><span class="p">:</span> <span class="n">index</span><span class="o">.</span><span class="n">md</span>
+    <span class="o">-</span> <span class="n">Demo</span><span class="p">:</span> <span class="n">demo</span><span class="o">.</span><span class="n">md</span>
+<span class="n">theme</span><span class="p">:</span>
+  <span class="n">name</span><span class="p">:</span> <span class="s2">&quot;material&quot;</span>
+<span class="n">plugins</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">search</span>
+  <span class="o">-</span> <span class="n">mkdocstrings</span><span class="p">:</span>
+      <span class="n">default_handler</span><span class="p">:</span> <span class="n">python</span>
+      <span class="n">handlers</span><span class="p">:</span>
+        <span class="n">python</span><span class="p">:</span>
+          <span class="n">selection</span><span class="p">:</span>
+            <span class="n">docstring_style</span><span class="p">:</span> <span class="s2">&quot;numpy&quot;</span>
+          <span class="n">rendering</span><span class="p">:</span>
+            <span class="n">show_source</span><span class="p">:</span> <span class="n">false</span>
+      <span class="n">custom_templates</span><span class="p">:</span> <span class="n">templates</span>
+      <span class="n">watch</span><span class="p">:</span>
+        <span class="o">-</span> <span class="n">src</span><span class="o">/</span><span class="n">demo</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Overwriting mkdocs.yml
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We can now test our docs using <code>mkdocs serve</code>, which will serve the documentation to a local host.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">poetry</span> <span class="n">run</span> <span class="n">mkdocs</span> <span class="n">serve</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>INFO     -  Building documentation...
+<span class="ansi-yellow-fg">WARNING  -  </span>Config value: &#39;site_url&#39;. Warning: This option is now required. Set
+            to a valid URL or an empty string to avoid an error in a future
+            release.
+<span class="ansi-yellow-fg">WARNING  -  </span>Config value: &#39;site_url&#39;. Warning: The &#39;use_directory_urls&#39; option
+            has been disabled because &#39;site_url&#39; contains an empty value. Either
+            define a valid URL for &#39;site_url&#39; or set &#39;use_directory_urls&#39; to
+            False.
+INFO     -  Cleaning site directory
+INFO     -  Documentation built in 0.40 seconds
+INFO     -  [18:45:17] Serving on http://127.0.0.1:8000/
+INFO     -  [18:45:20] Browser connected: http://127.0.0.1:8000/demo.html
+^C
+INFO     -  Shutting down...
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>If you use the cell above you should see something like this, which is the documentation for our function.</p>
+<p><img src="figures/demo.png" alt="Demo docs"></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This looks great! If we now wanted to store this on GitHub, we might want a <code>.gitignore</code> file to makes sure we don't track everything</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">a</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-blue-fg">.</span>/              <span class="ansi-blue-fg">.venv</span>/          mkdocs.yaml     pyproject.toml
+<span class="ansi-blue-fg">..</span>/             README.rst      mkdocs.yml      <span class="ansi-blue-fg">src</span>/
+<span class="ansi-blue-fg">.pytest_cache</span>/  <span class="ansi-blue-fg">docs</span>/           poetry.lock     <span class="ansi-blue-fg">tests</span>/
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="o">.</span><span class="n">gitignore</span>
+<span class="n">__pycache__</span>
+<span class="o">.</span><span class="n">ipynb_checkpoints</span>
+<span class="o">.</span><span class="n">pytest_cache</span>
+<span class="n">site</span><span class="o">/</span>
+<span class="o">.</span><span class="n">venv</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Writing .gitignore
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>If we want to track these files with <code>git</code> we can use</p>
+
+<pre><code>git init</code></pre>
+<p>To start a new repository</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">git</span> <span class="n">init</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Initialized empty Git repository in /Users/ch/repos/astronomy_workflow/docs/notebooks/3.0-building/demo/demo/.git/
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We can check the status</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">git</span> <span class="n">status</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>On branch master
+
+No commits yet
+
+Untracked files:
+  (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
+	<span class="ansi-red-fg">.gitignore</span>
+	<span class="ansi-red-fg">README.rst</span>
+	<span class="ansi-red-fg">docs/</span>
+	<span class="ansi-red-fg">mkdocs.yml</span>
+	<span class="ansi-red-fg">poetry.lock</span>
+	<span class="ansi-red-fg">pyproject.toml</span>
+	<span class="ansi-red-fg">src/</span>
+	<span class="ansi-red-fg">tests/</span>
+
+nothing added to commit but untracked files present (use &#34;git add&#34; to track)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We probably want to track all these files, so we can add them all using</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Now we can use <code>git commit</code> to commit these changes, and version control what we've done so far.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;first commit&#39;</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[master (root-commit) d90c949] first commit
+ 12 files changed, 1757 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.rst
+ create mode 100644 docs/demo.md
+ create mode 100644 docs/index.md
+ create mode 100644 mkdocs.yml
+ create mode 100644 poetry.lock
+ create mode 100644 pyproject.toml
+ create mode 100644 src/demo/__init__.py
+ create mode 100644 src/demo/demo.py
+ create mode 100644 tests/__init__.py
+ create mode 100644 tests/test_demo.py
+ create mode 100644 tests/test_sin.py
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>If we wanted to, we could now add a <code>remote</code>, and push these changes to GitHub!</p>
+<p>If we want to push our docs page to our remote GitHub, we would use</p>
+
+<pre><code>poetry run mkdocs gh-deploy</code></pre>
+<p>(You might need to tweak mkdocs.yml).</p>
+<p>Finally, if we wanted to publish our package to PyPI, we would use</p>
+
+<pre><code>poetry publish</code></pre>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>If we want to add GitHub actions, we would need to make a workflows directory and add some more <code>.yml</code> files. If we want to use <code>black</code> or <code>flake8</code> we can install them as development dependencies and run them</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">poetry</span> <span class="n">add</span> <span class="o">-</span><span class="n">D</span> <span class="n">black</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Using version <span class="ansi-bold">^21.6b0</span> for <span class="ansi-cyan-fg">black</span>
+
+<span class="ansi-blue-fg">Updating dependencies</span>
+<span class="ansi-blue-fg">Resolving dependencies...</span> (0.9s)
+
+<span class="ansi-blue-fg">Writing lock file</span>
+
+<span class="ansi-bold">Package operations</span>: <span class="ansi-blue-fg">6</span> installs, <span class="ansi-blue-fg">0</span> updates, <span class="ansi-blue-fg">0</span> removals
+
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">appdirs</span> (<span class="ansi-bold">1.4.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mypy-extensions</span> (<span class="ansi-bold">0.4.3</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mypy-extensions</span> (<span class="ansi-bold">0.4.3</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">appdirs</span> (<span class="ansi-bold">1.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mypy-extensions</span> (<span class="ansi-bold">0.4.3</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mypy-extensions</span> (<span class="ansi-bold">0.4.3</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-bold">0.10.2</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mypy-extensions</span> (<span class="ansi-bold">0.4.3</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">appdirs</span> (<span class="ansi-green-fg">1.4.4</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mypy-extensions</span> (<span class="ansi-bold">0.4.3</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">mypy-extensions</span> (<span class="ansi-green-fg">0.4.3</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-bold">0.8.1</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-bold">2021.4.4</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-green-fg">2021.4.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-green-fg">2021.4.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">pathspec</span> (<span class="ansi-green-fg">0.8.1</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">regex</span> (<span class="ansi-green-fg">2021.4.4</span>)
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">toml</span> (<span class="ansi-green-fg">0.10.2</span>)
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">black</span> (<span class="ansi-bold">21.6b0</span>): <span class="ansi-blue-fg">Pending...</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">black</span> (<span class="ansi-bold">21.6b0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">0%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">black</span> (<span class="ansi-bold">21.6b0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">black</span> (<span class="ansi-bold">21.6b0</span>): <span class="ansi-blue-fg">Downloading...</span> <span class="ansi-bold">100%</span>
+  <span class="ansi-blue-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">black</span> (<span class="ansi-bold">21.6b0</span>): <span class="ansi-blue-fg">Installing...</span>
+  <span class="ansi-green-intense-fg ansi-bold">•</span> Installing <span class="ansi-cyan-fg">black</span> (<span class="ansi-green-fg">21.6b0</span>)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class="highlight-ipynb hl-python"><pre><span></span><span class="err">!</span> <span class="n">poetry</span> <span class="n">run</span> <span class="n">black</span> <span class="n">src</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">reformatted src/demo/__init__.py</span>
+<span class="ansi-bold">reformatted src/demo/demo.py</span>
+<span class="ansi-bold">All done! ✨ 🍰 ✨</span>
+<span class="ansi-bold">2 files reformatted</span>.
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -1588,6 +3063,26 @@ Installing collected packages: pylev, pastel, crashtest, lockfile, importlib-res
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="google-colab.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Google colab" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Google colab
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

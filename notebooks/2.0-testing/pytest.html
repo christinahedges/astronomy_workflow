@@ -357,6 +357,19 @@
     Do I have to make tests
   </a>
   
+    <nav class="md-nav" aria-label="Do I have to make tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seriously-do-i-have-to" class="md-nav__link">
+    Seriously, do I have to?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -541,6 +554,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.0-building/demo.html" class="md-nav__link">
+        Demonstration: How to use these tools
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -577,6 +605,19 @@
   <a href="#do-i-have-to-make-tests" class="md-nav__link">
     Do I have to make tests
   </a>
+  
+    <nav class="md-nav" aria-label="Do I have to make tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seriously-do-i-have-to" class="md-nav__link">
+    Seriously, do I have to?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1150,6 +1191,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="what-are-unit-tests">What are unit tests?<a class="anchor-link" href="#What-are-unit-tests?">&#182;</a></h2><p>Unit tests are small, simple functions which test (ideally) a single part of your tool. Tests check that all parts of your code work correctly ("pass") and can be run on different machines and architectures so you know your users won't have issues.</p>
 <h2 id="do-i-have-to-make-tests">Do I have to make tests<a class="anchor-link" href="#Do-I-have-to-make-tests">&#182;</a></h2><p>You don't have to, but it will make your package much more usable, and much easier to maintain and fix. It is recommended.</p>
+<h3 id="seriously-do-i-have-to">Seriously, do I have to?<a class="anchor-link" href="#Seriously,-do-I-have-to?">&#182;</a></h3><p>I have lots of untested functions in my packages, but ultimately this ends up being a pain in the future. You don't have to test everything you write! If you're going to have other people contribute to your code, or even use it extensively, you'll benefit from writing unit tests.</p>
+<p>You can have a cute badge on your package that shows your tests are passing!</p>
 <h2 id="how-should-i-make-tests">How should I make tests?<a class="anchor-link" href="#How-should-I-make-tests?">&#182;</a></h2><p>This is really up to you, but there a few sorts of approaches;</p>
 <ol>
 <li>Build the code, and then test it. This lets you be flexible when designing, but can be a headache to actually test in the end.</li>

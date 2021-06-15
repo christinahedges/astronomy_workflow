@@ -365,33 +365,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-write-them" class="md-nav__link">
-    How do I write them?
-  </a>
-  
-    <nav class="md-nav" aria-label="How do I write them?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#do-i-have-to-make-unit-tests" class="md-nav__link">
-    Do I have to make unit tests?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seriously-do-i-have-to" class="md-nav__link">
-    Seriously, do I have to?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#where-do-actions-come-in" class="md-nav__link">
     Where do actions come in?
   </a>
@@ -401,6 +374,13 @@
         <li class="md-nav__item">
   <a href="#1-make-an-yaml-file" class="md-nav__link">
     1. Make an .yaml file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-push-to-github" class="md-nav__link">
+    2. Push to GitHub
   </a>
   
 </li>
@@ -533,6 +513,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.0-building/demo.html" class="md-nav__link">
+        Demonstration: How to use these tools
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -566,33 +561,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-write-them" class="md-nav__link">
-    How do I write them?
-  </a>
-  
-    <nav class="md-nav" aria-label="How do I write them?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#do-i-have-to-make-unit-tests" class="md-nav__link">
-    Do I have to make unit tests?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seriously-do-i-have-to" class="md-nav__link">
-    Seriously, do I have to?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#where-do-actions-come-in" class="md-nav__link">
     Where do actions come in?
   </a>
@@ -602,6 +570,13 @@
         <li class="md-nav__item">
   <a href="#1-make-an-yaml-file" class="md-nav__link">
     1. Make an .yaml file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-push-to-github" class="md-nav__link">
+    2. Push to GitHub
   </a>
   
 </li>
@@ -1127,10 +1102,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="github-actions">GitHub Actions<a class="anchor-link" href="#GitHub-Actions">&#182;</a></h1><p><em>TL;DR: GitHub actions will run your unit tests for you and tell you if your tools are passing or failing. If you're using tests, this will up your game.</em></p>
 <h2 id="what-are-unit-tests">What are unit tests?<a class="anchor-link" href="#What-are-unit-tests?">&#182;</a></h2><p>Unit tests are small snippets of code that use a small part of your tool, and check that it's functional. Basic tests might just ensure that certain parts of your tool install properly. More advanced tests will go through a short workflow with your tool, and check that it provides the right answer.</p>
-<h2 id="how-do-i-write-them">How do I write them?<a class="anchor-link" href="#How-do-I-write-them?">&#182;</a></h2><p>Look into the <code>pytest</code> documentation (or a nice <a href="https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest">tutorial</a>) which will show you how to write tests.</p>
-<h3 id="do-i-have-to-make-unit-tests">Do I have to make unit tests?<a class="anchor-link" href="#Do-I-have-to-make-unit-tests?">&#182;</a></h3><p>Making unit tests is good coding practice, I recommend it. If you're really keen, you can use "test driven development" to write tests that should pass (e.g. my tool should take in these variables, and output these others), and then develop code that makes the test pass. Of course, sometimes we just want to build and test as we go.</p>
-<h3 id="seriously-do-i-have-to">Seriously, do I have to?<a class="anchor-link" href="#Seriously,-do-I-have-to?">&#182;</a></h3><p>I have lots of untested functions in my packages, but ultimately this ends up being a pain in the future. You don't have to test everything you write! If you're going to have other people contribute to your code, or even use it extensively, you'll benefit from writing unit tests.</p>
-<p>You can have a cute badge on your package that shows your tests are passing!</p>
 <h2 id="where-do-actions-come-in">Where do actions come in?<a class="anchor-link" href="#Where-do-actions-come-in?">&#182;</a></h2><p>Once you've written tests, you may run them on your local machine to check that your code passes. If you use GitHub actions, you can run your tests every time you merge a new change, and you can run it on different architecture to check that your tests pass on e.g. Python 3.7 and Python 3.8.</p>
 <h2 id="1-make-an-yaml-file">1. Make an .yaml file<a class="anchor-link" href="#1.-Make-an-.yaml-file">&#182;</a></h2><p>To start out, in your project you'll have to add a directory</p>
 
@@ -1140,7 +1111,7 @@ mkdir .github/workflows</code></pre>
 
 <pre><code>name: pytest
 
-on: [push]
+on: [push, pull request]
 
 jobs:
   build:
@@ -1165,6 +1136,7 @@ jobs:
       run: |
         make pytest</code></pre>
 <p>This says, whenever there is a push to the <code>main</code> branch, run the following on Python versions 3.7, 3.8 and 3.9. First it installs <code>poetry</code>, then it installs the packages, and then it runs <code>make pytest</code>. I have a Makefile in the directory, which has a command named <code>pytest</code> which automatically runs my tests in this package. This is a great place to start for GitHub actions.</p>
+<h2 id="2-push-to-github">2. Push to GitHub<a class="anchor-link" href="#2.-Push-to-GitHub">&#182;</a></h2><p>Once these files, in this directory structure, are archived at GitHub, your actions should trigger automatically based on the <code>on</code> line in the <code>.yaml</code> file. At the moment it's set up to trigger any time there is a push, or pull request.</p>
 
 </div>
 </div>
